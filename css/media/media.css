@@ -10,7 +10,7 @@
         background-size: cover;
         top:  70px;
         transition: all .5s;
-        z-index: 10;
+        z-index: 600;
     }
      .header__link.active{
         left: 0;
