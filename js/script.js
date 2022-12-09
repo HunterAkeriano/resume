@@ -6,6 +6,7 @@ const blockText = document.querySelector('.block-text');
 function closeMenu(){
     burger.classList.remove('active');
     navLink.classList.remove('active');
+    document.body.style.overflow = 'scroll';
 }
 
 linkNav.forEach((item) =>{

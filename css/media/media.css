@@ -43,6 +43,8 @@
     }
     .info .info__content-left .block-text{
         margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
     }
     .info .info__content-right {
         width: 100%;
@@ -76,5 +78,38 @@
     .humor__content-text{
         font-size: 14px;
         line-height: 20px;
+    }
+}
+
+/* me */
+@media(max-width: 1096px){
+    .me__content{
+        flex-direction: column-reverse;
+    }
+    .me__content-video {
+        margin: 0 auto;
+        
+    }
+    .me__content-info{
+
+       padding: 0;
+    }
+    .me .me__content-reverse{
+        flex-direction: column-reverse;
+    }
+}
+@media(max-width: 800px){
+    .me__content-info .me-title{
+        font-size: 32px;
+    }
+    .me__content-info .me-subtitle{
+        font-size: 18px;
+    }
+    .me__content-info .me-text {
+        font-size: 15px;
+    }
+    .me__content-video .video-media{
+        max-width: 300px;
+        width: 150%;
     }
 }
