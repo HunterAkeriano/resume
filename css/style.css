@@ -315,9 +315,6 @@ header {
   padding-top: 200px;
   justify-content: space-around;
 }
-.me__content-video {
-  width: 30%;
-}
 .me__content-video .video-media {
   max-height: 550px;
   border-radius: 15px;
