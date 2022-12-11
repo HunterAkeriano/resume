@@ -446,4 +446,114 @@ header {
 }
 .works__content.active {
   display: flex;
+}
+.works .work-test {
+  margin-top: 50px;
+}
+.works .work-test .test-title {
+  text-align: center;
+  cursor: default;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.works .work-test .work-pages {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #00A3FF;
+  border-radius: 0px 0px 20px 20px;
+}
+.works .work-test .work-pages .work-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.works .work-test .work-pages .work-header .work-header-logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23.2991px;
+  line-height: 39px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+.works .work-test .work-pages .work-header .work-header-logo span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21.5327px;
+  line-height: 26px;
+  color: #00A3FF;
+  padding: 2px 8px;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+.works .work-test .work-pages .work-header .header-pro {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.works .work-test .work-pages .work-header .header-pro img {
+  margin-left: 5px;
+}
+.works .work-test .work-pages .work-info {
+  background: #3A83F7;
+  margin-top: 25px;
+  border-radius: 20px;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+.works .work-test .work-pages .work-info .info__left {
+  display: flex;
+  align-items: center;
+}
+.works .work-test .work-pages .work-info .info__left .info__left-text {
+  margin-left: 10px;
+  border-right: 1px solid rgba(149, 204, 255, 0.27);
+  padding-right: 20px;
+}
+.works .work-test .work-pages .work-info .info__left .info__left-text h6 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 13px;
+  color: #95CCFF;
+  text-transform: uppercase;
+}
+.works .work-test .work-pages .work-info .info__left .info__left-text p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.works .work-test .work-pages .work-info .info__right {
+  display: flex;
+  align-items: center;
+}
+.works .work-test .work-pages .work-info .info__right .info__right-text {
+  margin-left: 10px;
+}
+.works .work-test .work-pages .work-info .info__right .info__right-text h6 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 13px;
+  color: #95CCFF;
+  text-transform: uppercase;
+}
+.works .work-test .work-pages .work-info .info__right .info__right-text p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.8043px;
+  line-height: 23px;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
