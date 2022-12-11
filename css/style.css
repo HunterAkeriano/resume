@@ -358,6 +358,7 @@ header {
   padding-top: 150px;
   margin-top: -100px;
   background-color: rgb(221, 217, 217);
+  padding-bottom: 150px;
   overflow: hidden;
 }
 .works .swiper1 {
@@ -598,7 +599,6 @@ header {
   padding: 18px 20px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  min-width: 345px;
 }
 .works .work-test .work-pages .products__acord .label-info img {
   margin-left: 37px;
@@ -606,7 +606,7 @@ header {
 .works .work-test .work-pages .products__acord .label-info h3 {
   font-style: normal;
   font-weight: 700;
-  font-size: 15.6058px;
+  font-size: 13px;
   line-height: 19px;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -628,7 +628,7 @@ header {
 }
 .works .work-test .work-pages .products__acord .acord-car img {
   cursor: pointer;
-  z-index: 100;
+  z-index: 1;
 }
 .works .work-test .work-pages .products__acord .acord-car label {
   display: flex;
@@ -646,14 +646,14 @@ header {
 .works .work-test .work-pages .products__acord .acord-car label .car-info h6 {
   font-style: normal;
   font-weight: 600;
-  font-size: 14.1498px;
+  font-size: 10px;
   color: #FFFFFF;
   margin-left: 10px;
 }
 .works .work-test .work-pages .products__acord .acord-car label .car-info p {
   font-style: normal;
   font-weight: 600;
-  font-size: 8px;
+  font-size: 6px;
   line-height: 164.9%;
   color: rgba(255, 255, 255, 0.8);
   margin-left: 10px;
@@ -666,6 +666,9 @@ header {
 }
 .works .work-test .work-pages .products__acord .acord-car .car-input:checked + label .car-info {
   display: block;
+}
+.works .work-test .work-pages .products__acord .acord-car .car-input {
+  z-index: 1;
 }
 .works .work-test .work-pages .products__acord .acord-date {
   display: none;
@@ -828,7 +831,7 @@ header {
   margin-top: 8px;
 }
 .works .work-test .work-pages .cars__block-input .input-block input {
-  width: 236px;
+  width: 100%;
   padding: 8px 20px;
   background: #F1F1F1;
   border: 0;
@@ -991,4 +994,95 @@ header {
   border-radius: 25px;
   border: 0;
   color: #FFFFFF;
+}
+
+.call {
+  padding-top: 150px;
+  margin-top: -100px;
+  background-color: rgb(221, 217, 217);
+}
+.call-title {
+  text-align: center;
+  cursor: default;
+  transition: all 0.3s;
+  font-size: 32px;
+}
+.call__content {
+  border-radius: 40px;
+  background-color: #039ffa;
+  padding: 20px 15px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.call__content-left {
+  position: relative;
+  padding-top: 150px;
+}
+.call__content-left img {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 100px;
+  -webkit-animation: skok 1.2s ease-in infinite;
+          animation: skok 1.2s ease-in infinite;
+}
+@-webkit-keyframes skok {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes skok {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.call__content-left h4 {
+  font-size: 22px;
+  cursor: default;
+}
+.call__content-left a {
+  display: inline;
+}
+.call__content-right {
+  padding-top: 150px;
+  position: relative;
+}
+.call__content-right img {
+  position: absolute;
+  width: 100px;
+  top: 0;
+  left: 30%;
+  -webkit-animation: skok 1.2s ease-in infinite;
+          animation: skok 1.2s ease-in infinite;
+}
+@keyframes skok {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.call__content-right h4 {
+  font-size: 17px;
+  cursor: default;
+}
+.call__content-right a {
+  display: inline;
 }/*# sourceMappingURL=style.css.map */

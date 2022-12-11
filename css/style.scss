@@ -371,7 +371,7 @@ header{
     padding-top: 150px;
     margin-top: -100px;
     background-color: rgb(221, 217, 217);
-   
+   padding-bottom: 150px;
     overflow: hidden;
     .swiper1{
         overflow: hidden;
@@ -615,7 +615,6 @@ header{
                         padding: 18px 20px;
                         background: rgba(255, 255, 255, 0.2);
                         border-radius: 20px;
-                        min-width: 345px;
                        
                         img{
                             margin-left: 37px;
@@ -623,7 +622,7 @@ header{
                             h3{
                                 font-style: normal;
                                 font-weight: 700;
-                                font-size: 15.6058px;
+                                font-size: 13px;
                                 line-height: 19px;
                                 text-transform: uppercase;
                 
@@ -639,12 +638,14 @@ header{
                         margin-top: 4px;
                         align-items: center;
                         justify-content: space-between;
+                       
                         input{
                             appearance: none;
+                           
                         }
                         img{
                             cursor: pointer;
-                            z-index: 100;
+                            z-index: 1;
                         }
                         label{
                             display: flex;
@@ -661,14 +662,14 @@ header{
                                 h6{
                                     font-style: normal;
                                     font-weight: 600;
-                                    font-size: 14.1498px;
+                                    font-size: 10px;
                                     color: #FFFFFF;
                                     margin-left: 10px;
                                 }
                                 p{
                                     font-style: normal;
                                     font-weight: 600;
-                                    font-size: 8px;
+                                    font-size: 6px;
                                     line-height: 164.9%;
                                     color: rgba(255, 255, 255, 0.8);
                                     margin-left: 10px;
@@ -683,6 +684,9 @@ header{
                         }
                         .car-input:checked + label .car-info{
                             display: block;
+                        }
+                        .car-input{
+                            z-index: 1;
                         }
                        }
             
@@ -863,7 +867,7 @@ header{
                                 display: none;
                                 margin-top: 8px;
                                 input{
-                                    width: 236px;
+                                    width: 100%;
                                     padding: 8px 20px;
                                     background: #F1F1F1;
                                     border: 0;
@@ -1038,4 +1042,87 @@ header{
                 
             }
         }
+}
+.call{
+    padding-top: 150px;
+    margin-top: -100px;
+    background-color: rgb(221, 217, 217);
+    &-title{
+        text-align: center;
+        cursor: default;
+        transition: all .3s;
+        font-size: 32px;
     }
+    &__content{
+        border-radius: 40px;
+        background-color: #039ffa;
+        padding: 20px 15px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        &-left{
+            
+            
+            position: relative;
+            padding-top: 150px;
+            img{
+                position: absolute;
+                top: 0;
+                left: 30%;
+                width: 100px;
+                animation: skok 1.2s ease-in infinite;
+            }
+            @keyframes skok {
+                0%{
+                    top: 0px
+                }
+                50%{
+                    top: 20px;
+                }
+                100%{
+                    top: 0px;
+                }
+                
+            }
+            h4{
+                font-size: 22px;
+                cursor: default;
+            }
+            a{
+               display: inline;
+            }
+        }
+        &-right{
+            padding-top: 150px;
+            position: relative;
+            
+            img{
+                position: absolute;
+                width: 100px;
+                top: 0;
+                left: 30%;
+                animation: skok 1.2s ease-in infinite;
+            }
+            @keyframes skok {
+                0%{
+                    top: 0px
+                }
+                50%{
+                    top: 20px;
+                }
+                100%{
+                    top: 0px;
+                }
+                
+            }
+             h4{
+                font-size: 17px;
+                cursor: default;
+            }
+            a{
+                display: inline;
+            }
+        }
+    }
+}
+
