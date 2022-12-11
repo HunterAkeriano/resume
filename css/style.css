@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -555,5 +556,439 @@ header {
   font-weight: 700;
   font-size: 12.8043px;
   line-height: 23px;
+  color: #FFFFFF;
+}
+.works .work-test .work-pages .products {
+  margin-top: 25px;
+}
+.works .work-test .work-pages .products__text {
+  display: flex;
+  align-items: center;
+}
+.works .work-test .work-pages .products__text h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.4112px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.works .work-test .work-pages .products__text span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  background: #FF0099;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+.works .work-test .work-pages .products__acord {
+  margin-top: 12px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+.works .work-test .work-pages .products__acord .label-info {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+  cursor: pointer;
+  width: 100%;
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  min-width: 345px;
+}
+.works .work-test .work-pages .products__acord .label-info img {
+  margin-left: 37px;
+}
+.works .work-test .work-pages .products__acord .label-info h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15.6058px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-left: 13px;
+}
+.works .work-test .work-pages .products__acord .acord-car {
+  display: none;
+  transition: all 0.3s;
+  max-height: 45px;
+  margin-bottom: 20px;
+  margin-top: 4px;
+  align-items: center;
+  justify-content: space-between;
+}
+.works .work-test .work-pages .products__acord .acord-car input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.works .work-test .work-pages .products__acord .acord-car img {
+  cursor: pointer;
+  z-index: 100;
+}
+.works .work-test .work-pages .products__acord .acord-car label {
+  display: flex;
+  align-items: center;
+}
+.works .work-test .work-pages .products__acord .acord-car label .car-info {
+  display: none;
+  background-color: #3A83F7;
+  border-radius: 15px;
+  padding: 7px 15px;
+  padding-right: 60px;
+  margin-left: -20px;
+  position: relative;
+}
+.works .work-test .work-pages .products__acord .acord-car label .car-info h6 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.1498px;
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+.works .work-test .work-pages .products__acord .acord-car label .car-info p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 164.9%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 10px;
+}
+.works .work-test .work-pages .products__acord .acord-car label .car-info img {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  margin-top: -8px;
+}
+.works .work-test .work-pages .products__acord .acord-car .car-input:checked + label .car-info {
+  display: block;
+}
+.works .work-test .work-pages .products__acord .acord-date {
+  display: none;
+  justify-content: space-between;
+}
+.works .work-test .work-pages .products__acord .acord-date input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.works .work-test .work-pages .products__acord .acord-date .date-label {
+  display: flex;
+  align-items: center;
+  background: #C7DFFF;
+  padding: 10px 10px;
+  border-radius: 17.7835px;
+  position: relative;
+  cursor: pointer;
+}
+.works .work-test .work-pages .products__acord .acord-date .date-label p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #304E75;
+  margin-left: 8px;
+}
+.works .work-test .work-pages .products__acord .acord-date .date-label .date-yes {
+  position: absolute;
+  top: 8px;
+  left: 38px;
+  display: none;
+}
+.works .work-test .work-pages .products__acord .acord-date .date-input:checked + .date-label {
+  background: #FFFFFF;
+}
+.works .work-test .work-pages .products__acord .radio_input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+.works .work-test .work-pages .products__acord .radio_label::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 37px;
+  margin-top: -14px;
+  left: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+.works .work-test .work-pages .products__acord .radio_label::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: url("../images/icons/yes-vector.svg") no-repeat;
+  background-size: 14px 14px;
+  position: absolute;
+  top: 37px;
+  margin-top: -7px;
+  left: 27px;
+  z-index: 2;
+  opacity: 0;
+}
+.works .work-test .work-pages .products__acord .radio_input:checked + .radio_label::after {
+  opacity: 1;
+}
+.works .work-test .work-pages .products__acord .radio_input:checked + .radio_label::before {
+  background: white;
+}
+.works .work-test .work-pages .cars {
+  margin-top: 25px;
+  position: relative;
+}
+.works .work-test .work-pages .cars h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.4112px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.works .work-test .work-pages .cars__block {
+  margin-top: 15px;
+  background: white;
+  padding: 15px 9px 9px 19px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.works .work-test .work-pages .cars__block-option h6 {
+  color: #A0A0A0;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.works .work-test .work-pages .cars__block-option .select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 17px;
+  position: relative;
+}
+.works .work-test .work-pages .cars__block-option .select .select-burger {
+  width: 36px;
+  height: 24px;
+  cursor: pointer;
+}
+.works .work-test .work-pages .cars__block-option .select .select-burger span {
+  display: block;
+  height: 8px;
+  width: 100%;
+  background: #BFBFBF;
+}
+.works .work-test .work-pages .cars__block-option .select .select-burger span:nth-child(1) {
+  background: #F1F1F1;
+  border-radius: 10px 10px 0px 0px;
+}
+.works .work-test .work-pages .cars__block-option .select .select-burger span:nth-child(2) {
+  background: #D9D9D9;
+}
+.works .work-test .work-pages .cars__block-option .select .select-burger span:nth-child(3) {
+  border-radius: 0px 0px 10px 10px;
+  background: #BFBFBF;
+}
+.works .work-test .work-pages .cars__block-option .select .select-burger .span-active.active {
+  background-color: red;
+}
+.works .work-test .work-pages .cars__block-option .select .select-country {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #ccc;
+  padding: 10px 5px;
+  width: 36px;
+  left: -10000%;
+}
+.works .work-test .work-pages .cars__block-option .select .select-country img {
+  width: 36px;
+  margin-left: -5px;
+  cursor: pointer;
+}
+.works .work-test .work-pages .cars__block-option .select .select-country.active {
+  left: 0;
+}
+.works .work-test .work-pages .cars__block-input h6 {
+  color: #A0A0A0;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.works .work-test .work-pages .cars__block-input .input-block {
+  display: none;
+  margin-top: 8px;
+}
+.works .work-test .work-pages .cars__block-input .input-block input {
+  width: 236px;
+  padding: 8px 20px;
+  background: #F1F1F1;
+  border: 0;
+  border-radius: 14px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+  font-family: "Montserrat";
+}
+.works .work-test .work-pages .cars__block-input .input-block.active {
+  display: block;
+}
+.works .work-test .work-pages .cars button {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  width: 100%;
+  margin-top: 6px;
+  background-color: #33B5FF;
+  border-radius: 20px;
+  padding: 12px 0px;
+  border: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.6341px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.works .work-test .work-pages .cars button img {
+  margin-right: 6px;
+}
+.works .work-test .work-pages .data {
+  margin-top: 25px;
+}
+.works .work-test .work-pages .data h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.4112px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.works .work-test .work-pages .data__block {
+  margin-top: 11px;
+  background-color: #fff;
+  padding: 12px 19px;
+  border-radius: 20px;
+}
+.works .work-test .work-pages .data__block p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9.82588px;
+  line-height: 12px;
+  color: #A0A0A0;
+}
+.works .work-test .work-pages .data__block input {
+  font-family: "Montserrat";
+  margin-top: 7px;
+  width: 100%;
+  padding: 10px 18px;
+  background: #F1F1F1;
+  border-radius: 14px;
+  border: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13.7815px;
+  line-height: 17px;
+  color: #9A9A9A;
+}
+.works .work-test .work-pages .select-help {
+  position: absolute;
+  width: 153px;
+  background: url("../images/help.svg") no-repeat;
+  background-size: cover;
+  padding: 6px 10px;
+  padding-top: 10px;
+  border-radius: 10px 10px 10px 10px;
+  top: 110px;
+  left: 15px;
+}
+.works .work-test .work-pages .select-help p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 11px;
+  color: #FFFFFF;
+}
+.works .work-test .work-pages .select-help.active {
+  display: none;
+}
+.works .work-test .work-pages .forms-accept {
+  margin-top: 11px;
+  position: relative;
+}
+.works .work-test .work-pages .forms-accept .checkbox-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+.works .work-test .work-pages .forms-accept .checkbox-label p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-left: 50px;
+}
+.works .work-test .work-pages .forms-accept .checkbox-label p a {
+  display: inline;
+  font-weight: 700;
+  text-decoration: underline;
+  color: white;
+}
+.works .work-test .work-pages .forms-accept .checkbox-label::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  z-index: 1;
+}
+.works .work-test .work-pages .forms-accept .checkbox-label::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: url("../images/icons/yes-vector.svg") no-repeat;
+  background-size: 8px 8px;
+  position: absolute;
+  top: 11px;
+  left: 15px;
+  z-index: 2;
+  opacity: 0;
+}
+.works .work-test .work-pages .forms-accept .checkbox-input:checked + .checkbox-label::before {
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+.works .work-test .work-pages .forms-accept .checkbox-input:checked + .checkbox-label::after {
+  opacity: 1;
+}
+.works .work-test .work-pages .form-pay {
+  width: 100%;
+  margin-top: 12px;
+  padding: 20px 0px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Montserrat";
+  background: #0085FF;
+  border-radius: 25px;
+  border: 0;
   color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

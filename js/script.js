@@ -127,4 +127,70 @@ tabsBtn.forEach(function(item){
     currentBtn.classList.add('active');
     currentTab.classList.add('active');
   })
+});
+let accordList = document.querySelectorAll('.products__acord');
+
+console.log(accordList);
+accordList.forEach((item,idx) => {
+    item.addEventListener('click',function () {
+        accordList.forEach((itemDelete)=> {
+            itemDelete.querySelector('.acord-car').style.display = 'none';
+            itemDelete.querySelector('.acord-date').style.display = 'none';
+        })
+        if(item.querySelector('.radio_input').checked) {
+            item.querySelector('.acord-car').style.display = 'flex'
+            item.querySelector('.acord-date').style.display = 'flex'
+        }
+    })
+});
+
+const selectBurger = document.querySelector('.select-burger');
+const selectCountry = document.querySelector('.select-country');
+const selectSpan = document.querySelectorAll('.span-active');
+const selectHelp = document.querySelector('.select-help');
+
+selectSpan.forEach(function(item){
+    selectBurger.addEventListener('click', function(){
+        item.classList.add('active')
+    })
 })
+
+function noHover(){
+    selectBurger.classList.toggle('active');
+    selectCountry.classList.toggle('active');
+    selectHelp.classList.add('active');
+}
+selectBurger.addEventListener('click', noHover);
+
+const tabsBtn1 = document.querySelectorAll('.img-btn');
+
+
+const tabsItems1 = document.querySelectorAll('.input-block');
+
+tabsBtn1.forEach(function(item){
+    item.addEventListener('click', function(){
+        let currentBtn = item;
+        let tabId = currentBtn.getAttribute('data-tab');
+        let currentTab = document.querySelector(tabId);
+
+        if(!currentBtn.classList.contains('active')){
+            tabsBtn1.forEach(function(item){
+                item.classList.remove('active');
+                selectCountry.classList.remove('active');
+                // selectSpan.classList.remove('active');
+            })
+    
+            tabsItems1.forEach(function(item){
+                item.classList.remove('active');
+                // selectSpan.classList.remove('active');
+                
+            })
+    
+            currentBtn.classList.add('active');
+            currentTab.classList.add('active');
+        }
+        }
+    )
+       
+})
+
