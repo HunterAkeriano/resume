@@ -159,7 +159,7 @@ header{
 .info{
     background: url('../images/bg-pages.png') no-repeat;
     background-size: cover;
-    padding: 100px 0px 200px 0px;
+    padding: 100px 0px 150px 0px;
     .info__content{
         margin-top: 50px;
         display: flex;
@@ -210,8 +210,8 @@ header{
                 }
             }
             .block-text.active{
-                opacity: 0;
-                transition: all .3s;
+                // opacity: 0;
+                // transition: all .3s;
             }
             .block-text::before{
                 content: '\201e';
@@ -245,6 +245,12 @@ header{
                 display: block;
                 width: 70%;
                margin: 0 auto;
+               border-radius: 40px;
+               transition: all .2s;
+            }
+            img:hover{
+                box-shadow:  0px 5px 5px 5px #ccc;
+                transform: translateX(-10px);
             }
         }
         &-right.active{
@@ -254,13 +260,15 @@ header{
 }
 
 .humor{
+  
    
     &__content{
+        margin-top: -100px;
         background-color: rgb(232, 189, 203);
         overflow: hidden;
         padding: 30px 25px;
         border-radius: 20px;
-        margin-top: -150px;
+        box-shadow: 5px 1px 5px 5px #ccc;
         &-label{
             display: block;
             max-width: 150px;
@@ -314,62 +322,45 @@ header{
 }
 
 .me{
-    background: rgb(227, 224, 224);
-    margin-top: -100px;
+ background-color: rgb(221, 217, 217);
+ margin-top: -100px;
+ padding-bottom: 150px;
     &__content{
+        padding-top: 150px;
         display: flex;
-        padding: 40px 20px;
-        // margin-top: 50px;
-        border-radius: 15px;
-        padding-top: 200px;
-        justify-content: space-around;
-       
-        &-video{
-            // width: 30%;
-            .video-media{
-                
-                max-height: 550px;
-                border-radius: 15px;
+        justify-content: space-between;
+        &-left{
+           width: 40%;
+            video{
+                border-radius: 20px;
+                width: 80%;
+                height: auto;
             }
         }
-        &-info{
+        &-right{
             font-family: 'Roboto Condensed', sans-serif;
-           
-            padding: 0 25px;
-            padding-top: 80px;
+            margin: 0 auto;
+            transition: all .3s;
+            padding-top: 70px;
+            cursor: default;
             .me-title{
                 text-align: center;
-                font-size: 48px;
                 font-weight: 700;
-                margin-bottom: 25px;
-                cursor: default;
-                transition: all .3s;
-
+                font-size: 42px;
+                margin-bottom: 40px;
             }
-            .me-subtitle{
-                font-size: 24px;
-                font-weight: 600;
-                margin-bottom: 20px;
-                cursor: default;
-                transition: all .3s;
-                text-align: center;
-            }
-            .me-text{
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 20px;
-                margin-bottom: 20px;
-                cursor: default;
-                transition: all .3s;
-                span{
-                    font-weight: 700;
+            .me-ol{
+                margin: 0;
+                padding: 0;
+                li{
+                    margin: 25px 0px;
+                    font-size: 22px;
+                    span{
+                        font-weight: 700;
+                        margin: 0 10px
+                    }
                 }
             }
         }
-
-    }
-    .me__content-reverse{
-        flex-direction: row-reverse;
-        padding-top: 50px;
     }
 }

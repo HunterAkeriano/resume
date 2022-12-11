@@ -82,34 +82,43 @@
 }
 
 /* me */
-@media(max-width: 1096px){
+@media(max-width: 1140px){
+    .me__content-right{
+        padding-top: 0;
+    }
+}
+@media(max-width: 1050px){
     .me__content{
         flex-direction: column-reverse;
     }
-    .me__content-video {
+    .me__content-left {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .me__content-left video{
+        display: block;
         margin: 0 auto;
-        
     }
-    .me__content-info{
-
-       padding: 0;
-    }
-    .me .me__content-reverse{
-        flex-direction: column-reverse;
+    .me__content-right .me-ol li::marker{
+        text-align-last: end;
     }
 }
-@media(max-width: 800px){
-    .me__content-info .me-title{
-        font-size: 32px;
-    }
-    .me__content-info .me-subtitle{
-        font-size: 18px;
-    }
-    .me__content-info .me-text {
+
+@media(max-width: 580px){
+    .me__content-right .me-ol li{
         font-size: 15px;
     }
-    .me__content-video .video-media{
-        max-width: 300px;
-        width: 150%;
+    
+    .me__content-right .me-title{
+        font-size: 28px;
+    }
+}
+@media(max-width: 414px){
+    .me__content-right .me-ol li{
+        font-size: 13px;
+    }
+    
+    .me__content-right .me-title{
+        font-size: 28px;
     }
 }

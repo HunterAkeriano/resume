@@ -155,7 +155,7 @@ header {
 .info {
   background: url("../images/bg-pages.png") no-repeat;
   background-size: cover;
-  padding: 100px 0px 200px 0px;
+  padding: 100px 0px 150px 0px;
 }
 .info .info__content {
   margin-top: 50px;
@@ -208,10 +208,6 @@ header {
 .info .info__content-left .block-text .info-text a:hover {
   color: rgb(70, 70, 13);
 }
-.info .info__content-left .block-text.active {
-  opacity: 0;
-  transition: all 0.3s;
-}
 .info .info__content-left .block-text::before {
   content: "„";
   position: absolute;
@@ -243,17 +239,24 @@ header {
   display: block;
   width: 70%;
   margin: 0 auto;
+  border-radius: 40px;
+  transition: all 0.2s;
+}
+.info .info__content-right img:hover {
+  box-shadow: 0px 5px 5px 5px #ccc;
+  transform: translateX(-10px);
 }
 .info .info__content-right.active {
   transform: translateX(0);
 }
 
 .humor__content {
+  margin-top: -100px;
   background-color: rgb(232, 189, 203);
   overflow: hidden;
   padding: 30px 25px;
   border-radius: 20px;
-  margin-top: -150px;
+  box-shadow: 5px 1px 5px 5px #ccc;
 }
 .humor__content-label {
   display: block;
@@ -305,53 +308,45 @@ header {
 }
 
 .me {
-  background: rgb(227, 224, 224);
+  background-color: rgb(221, 217, 217);
   margin-top: -100px;
+  padding-bottom: 150px;
 }
 .me__content {
+  padding-top: 150px;
   display: flex;
-  padding: 40px 20px;
-  border-radius: 15px;
-  padding-top: 200px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.me__content-video .video-media {
-  max-height: 550px;
-  border-radius: 15px;
+.me__content-left {
+  width: 40%;
 }
-.me__content-info {
+.me__content-left video {
+  border-radius: 20px;
+  width: 80%;
+  height: auto;
+}
+.me__content-right {
   font-family: "Roboto Condensed", sans-serif;
-  padding: 0 25px;
-  padding-top: 80px;
+  margin: 0 auto;
+  transition: all 0.3s;
+  padding-top: 70px;
+  cursor: default;
 }
-.me__content-info .me-title {
+.me__content-right .me-title {
   text-align: center;
-  font-size: 48px;
   font-weight: 700;
-  margin-bottom: 25px;
-  cursor: default;
-  transition: all 0.3s;
+  font-size: 42px;
+  margin-bottom: 40px;
 }
-.me__content-info .me-subtitle {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  cursor: default;
-  transition: all 0.3s;
-  text-align: center;
+.me__content-right .me-ol {
+  margin: 0;
+  padding: 0;
 }
-.me__content-info .me-text {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 20px;
-  margin-bottom: 20px;
-  cursor: default;
-  transition: all 0.3s;
+.me__content-right .me-ol li {
+  margin: 25px 0px;
+  font-size: 22px;
 }
-.me__content-info .me-text span {
+.me__content-right .me-ol li span {
   font-weight: 700;
-}
-.me .me__content-reverse {
-  flex-direction: row-reverse;
-  padding-top: 50px;
+  margin: 0 10px;
 }/*# sourceMappingURL=style.css.map */
