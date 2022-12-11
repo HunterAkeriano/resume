@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -37,6 +38,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: "Orbitron", sans-serif;
   font-family: "Roboto Condensed", sans-serif;
   font-family: "Poppins", sans-serif;
 }
@@ -349,4 +351,99 @@ header {
 .me__content-right .me-ol li span {
   font-weight: 700;
   margin: 0 10px;
+}
+
+.works {
+  padding-top: 150px;
+  margin-top: -100px;
+  background-color: rgb(221, 217, 217);
+  overflow: hidden;
+}
+.works .swiper1 {
+  overflow: hidden;
+  position: relative;
+}
+.works .swiper1 .swiper-wrapper .swiper-slide .swiper-btn {
+  padding: 20px 15px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: rgb(221, 217, 217);
+  border: 1px solid rgb(34, 34, 150);
+  transition: all 0.3s;
+  width: 150px;
+}
+.works .swiper1 .swiper-wrapper .swiper-slide .swiper-btn:hover {
+  background: rgb(34, 34, 150);
+  color: rgb(221, 217, 217);
+}
+.works .swiper1 .swiper-wrapper .swiper-slide .swiper-btn.active {
+  background: rgb(34, 34, 150);
+  color: rgb(221, 217, 217);
+}
+.works .swiper1 .swiper-pagination {
+  display: none;
+  position: absolute;
+  top: 61px;
+  z-index: 1;
+}
+.works .swiper1 .swiper-button-prev {
+  left: 90%;
+}
+.works .swiper1 .swiper-button-prev,
+.works .swiper1 .swiper-button-next {
+  display: none;
+  z-index: 1;
+}
+.works__content {
+  display: none;
+  margin-top: 90px;
+  justify-content: space-between;
+}
+.works__content-left {
+  width: 50%;
+}
+.works__content-left img {
+  width: 100%;
+}
+.works__content-right {
+  width: 50%;
+  padding-top: 30px;
+  cursor: default;
+  transition: all 0.3s;
+}
+.works__content-right .works-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 33px;
+}
+.works__content-right .works-text {
+  padding: 10px 15px;
+}
+.works__content-right .works-text .text-subtitle {
+  font-size: 22px;
+  font-weight: 700;
+}
+.works__content-right .works-subtitle {
+  text-align: center;
+  font-size: 22px;
+}
+.works__content-right .works-subtitle span {
+  color: green;
+}
+.works__content-right .repositories-work {
+  margin-left: 20px;
+  font-size: 18px;
+}
+.works__content-right .repositories-work a {
+  display: inline;
+  color: rgb(86, 74, 9);
+  font-weight: 400;
+}
+.works__content-right .repositories-work a:hover {
+  color: green;
+}
+.works__content.active {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

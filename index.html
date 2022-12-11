@@ -11,7 +11,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">    
 <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media/media.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>   
+<link rel="stylesheet" href="css/media/media.css">
     <title>Резюме - Дмитро Гулак</title>
 </head>
 <body>
@@ -108,10 +112,120 @@
                 </div>
             </div>
            </section>
+           <section class="works">
+            <div class="container">
+                <div class="works-btn">
+                    <div class="swiper-container swiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <button class="swiper-btn active" data-tab="#tab-1">Potren </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button  class="swiper-btn" data-tab="#tab-2">Музей </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="swiper-btn" data-tab="#tab-3">OceanNFT</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="swiper-btn" data-tab="#tab-4">Learnico</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="swiper-btn" data-tab="#tab-5">Marico</button>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="works__content active" id="tab-1">
+                    <div class="works__content-left">
+                        <img src="images/works/porten.png" alt="">
+                    </div>
+                    <div class="works__content-right">
+                       <h3 class="works-title">Porten Ukraine</h3>
+                       <div class="works-text">
+                        <h4 class="text-subtitle">Стек технологій:</h4>
+                        <p><span> - HTML5</span></p>
+                        <p><span> - CSS</span></p>
+                        <p><span> - JS(Dom, Swiper)</span></p>
+                       </div>
+                       <h5 class="works-subtitle">Робота виконана за: <span>31 годину</span> </h5>
+                       <p class="repositories-work">Посилання на роботу: <a href="https://hunterakeriano.github.io/poretn2/" target="_blank">*Натисни*</a></p>
+                    </div>
+                </div>
+                <div class="works__content " id="tab-2">
+                    <div class="works__content-left">
+                        <img src="images/works/muzei.png" alt="">
+                    </div>
+                    <div class="works__content-right">
+                       <h3 class="works-title">Музей ім.Лесі Українки</h3>
+                       <div class="works-text">
+                        <h4 class="text-subtitle">Стек технологій:</h4>
+                        <p><span> - HTML5</span></p>
+                        <p><span> - CSS</span></p>
+                        <p><span> - JS(Dom, Swiper)</span></p>
+                       </div>
+                       <h5 class="works-subtitle">Робота виконана за: <span>42 години</span> </h5>
+                       <p class="repositories-work">Посилання на роботу: <a href="https://hunterakeriano.github.io/muzei/" target="_blank">*Натисни*</a></p>
+                    </div>
+                </div>
+                <div class="works__content " id="tab-3">
+                    <div class="works__content-left">
+                        <img src="images/works/oceanNFT.png" alt="">
+                    </div>
+                    <div class="works__content-right">
+                       <h3 class="works-title">OceanNFT</h3>
+                       <div class="works-text">
+                        <h4 class="text-subtitle">Стек технологій:</h4>
+                        <p><span> - HTML5</span></p>
+                        <p><span> - SCSS</span></p>
+                        <p><span> - JS(Dom, Swiper, Tab)</span></p>
+                       </div>
+                       <h5 class="works-subtitle">Робота виконана за: <span> 100 годин</span> </h5>
+                       <p class="repositories-work">Посилання на роботу: <a href="https://hunterakeriano.github.io/visitinggamer.github.io/" target="_blank">*Натисни*</a></p>
+                    </div>
+                </div>
+                <div class="works__content " id="tab-4">
+                    <div class="works__content-left">
+                        <img src="images/works/learnico.png" alt="">
+                    </div>
+                    <div class="works__content-right">
+                       <h3 class="works-title">Learnico</h3>
+                       <div class="works-text">
+                        <h4 class="text-subtitle">Стек технологій:</h4>
+                        <p><span> - HTML5</span></p>
+                        <p><span> - SCSS</span></p>
+                        <p><span> - JS(Dom, Swiper, )</span></p>
+                        <p><span> - Gulp</span></p>
+                       </div>
+                       <h5 class="works-subtitle">Робота виконана за: <span> 12 годин</span> </h5>
+                       <p class="repositories-work">Посилання на роботу: <a href="https://hunterakeriano.github.io/game/" target="_blank">*Натисни*</a></p>
+                    </div>
+                </div>
+                <div class="works__content " id="tab-5">
+                    <div class="works__content-left">
+                        <img src="images/works/learnico.png" alt="">
+                    </div>
+                    <div class="works__content-right">
+                       <h3 class="works-title">Marico</h3>
+                       <div class="works-text">
+                        <h4 class="text-subtitle">Стек технологій:</h4>
+                        <p><span> - HTML5</span></p>
+                        <p><span> - SCSS</span></p>
+                        <p><span> - JS(Dom, Swiper)</span></p>
+                        <p><span> - Gulp</span></p>
+                       </div>
+                       <h5 class="works-subtitle">Робота виконана за: <span> 21 годину</span> </h5>
+                       <p class="repositories-work">Посилання на роботу: <a href="https://hunterakeriano.github.io/-/" target="_blank">*Натисни*</a></p>
+                    </div>
+                </div>
+            </div>
+           </section>
         </main>
         
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
