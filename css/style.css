@@ -1000,6 +1000,7 @@ header {
   padding-top: 150px;
   margin-top: -100px;
   background-color: rgb(221, 217, 217);
+  padding-bottom: 150px;
 }
 .call-title {
   text-align: center;
@@ -1085,4 +1086,112 @@ header {
 }
 .call__content-right a {
   display: inline;
+}
+
+.sell {
+  padding-top: 150px;
+  margin-top: -100px;
+  background-color: rgb(221, 217, 217);
+  padding-bottom: 150px;
+}
+.sell-title {
+  text-align: center;
+  font-size: 32px;
+  cursor: default;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+}
+.sell-info {
+  text-align: center;
+  cursor: default;
+  transition: all 0.3s;
+  font-size: 22px;
+  font-weight: 400;
+}
+.sell__form {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.sell__form-title {
+  text-align: center;
+  cursor: default;
+  font-size: 25px;
+}
+.sell__form-input {
+  margin: 20px 0px;
+}
+.sell__form-input input {
+  padding: 10px 20px;
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  border-radius: 20px;
+  border: 0;
+  outline: 2px solid rgb(103, 100, 100);
+  transition: all 0.3s;
+}
+.sell__form-input input:focus,
+.sell__form-input textarea:focus {
+  border: 0;
+  outline: 2px solid blue;
+}
+.sell__form-input textarea {
+  resize: none;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  border: 0;
+  outline: 2px solid rgb(103, 100, 100);
+  transition: all 0.3s;
+}
+.sell__form button {
+  width: 100%;
+  padding: 20px 0px;
+  background-color: #0085FF;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 22px;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.sell__form button:hover {
+  background-color: #C7DFFF;
+  color: #0085FF;
+}
+
+footer {
+  background: url("../images/bg-pages.png") no-repeat;
+  background-size: cover;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer__logo a {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.3s;
+  color: white;
+  opacity: 0.8;
+  padding: 15px 5px;
+  border-radius: 10px;
+}
+footer .footer__logo a img {
+  margin-right: 10px;
+}
+footer .footer__info h3 {
+  cursor: default;
+  transition: all 0.3s;
+  font-size: 13px;
+  color: white;
+  font-family: "Orbitron", sans-serif;
 }/*# sourceMappingURL=style.css.map */

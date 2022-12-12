@@ -180,4 +180,8 @@
     .call__content-right h4{
         font-size: 18px;
     }
+
+    footer .footer{
+        flex-direction: column;
+    }
 }
